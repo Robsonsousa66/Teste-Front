@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="valida.js"></script>
+  <script src="script.js"></script>
+  <title>Cadastro</title>
+</head>
+<body> 
+  <div class="form-group">
+    <h1>Cadastro</h1>
+    <form action="." method="post" id="form">
+    <label for="nNome">Nome</label> <input type="text" name="nNome" id="nNome" required>
+    <label for="dData">Data de nascimento</label> <input type="text" name="dData" id="dData" required>
+    <label for="nCPF">CPF</label> <input type="number" name="nCPF" id="nCPF" required>
+    <label for="nRG">RG</label> <input type="number" name="nRG" id="nRG" required>
+    <label for="txtNomeM">Nome da mãe</label> <input type="text" name="txtNomeM" id="txtNomeM">
+    <label for="nCEP">CEP</label> <input type="number" name="nCEP" id="nCEP" value="" size="10" maxlength="9"
+    onblur="pesquisacep(this.value)" required>
+    <label for="txtLog">Logradouro</label> <input type="text" name="txtLog" id="txtLog" required>
+    <label for="nNum">Número (Opcional)</label> <input type="number" name="nNum" id="nNum" required>
+    <label for="txtComp">Complemento</label> <input type="text" name="txtComp" id="txtComp" required>
+    <label for="txtBar">Bairro</label> <input type="text" name="txtBar" id="txtBar" required>
+    <label for="txtCid">Cidade</label> <input type="text" name="txtCid" id="txtCid" required>
+    <label for="txtEst">Estado</label> <input type="text" name="txtEst" id="txtEst" required>
+    <label for="txtEm">E-mail</label> <input type="email" name="txtEm" id="txtEm" required>
+    <label for="nCel">Celular</label> <input type="number" name="nCel" id="nCel" required>
+    <label for="txtCur">Curso</label> <input type="text" name="txtCur" id="txtCur" required> 
+    <label for="">Campus</label> <input type="text" name="txtCam" id="txtCam" required>
+    <input type="submit" value="enviar" class="btn">
+    </form>
+  </div>
+</body>
+</html>

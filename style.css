@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+div{
+  /*width: 370px;*/
+  width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+div h1{
+  text-align: center;
+}
+
+form{
+  border: 1px solid #000000;
+  border-radius: 25px;
+  padding: 10px;
+  position: relative;
+}
+form input{
+  display: block;
+  width: 80%;
+}
+
+input.btn{
+  padding-top: 10px;
+  display: block;
+  cursor: pointer;
+  margin: auto;
+  width: 250px;
+  border-radius: 25px;
+}
+
+.error{
+  border: red 1px solid;
+}
